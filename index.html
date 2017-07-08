@@ -2,20 +2,21 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
 
+  <title>Matt Gray | Web Developer</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Matt Gray | Web Developer</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Place favicon.ico in the root directory -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+  <!-- <link rel="stylesheet" type="text/css" href="assets/styles/index.scss"> -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <script src="index.js" type="text/javascript" charset="utf-8" defer></script>
+<!-- Do not add `script` tags unless you know what you are doing -->
+  <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
 
 </head>
 
@@ -27,7 +28,7 @@
       <div class="intro-box">
         <section class='intro'>
           <div class='intro-name'>
-            <h1>Matt Gray | Full-Stack Web Developer</h1>
+            <h1 id="headline">Matt Gray | Full-Stack Web Developer</h1>
             <h2 class='typed'></h2>
           </div>
 
@@ -106,62 +107,48 @@
 </div> <! Carousel -->
 
         <!-- Projects Section -->
-        <section class="projects">
+        <section class="col-md-12 projects">
             <h2 class="section-title">Projects</h2>
+            <div class="col-md-1"></div>
+            <div class="row">
+              <div class="col-md-2 project">
+                  <h3><a href="https://artpylon.github.io/brew-scout_front-end/" target="_blank">Brew Scout</a></h3>
+                  <p>A mobile response single page app that allows users to track
+                    their favorite beers.</p>
+                  <a href="https://artpylon.github.io/brew-scout_front-end/" class="ghost-button" target="_blank">App</a>
+                  <a href="https://github.com/artpylon/brew-scout_front-end" class="ghost-button" target="_blank">GitHub</a>
 
-            <div class="project">
-                <h3>
-                <a href="https://artpylon.github.io/brew-scout_front-end/" target="_blank" href="">Brew Scout</a>
-            </h3>
-                <p>A mobile response single page app that allows users to track
-                  their favorite beers.</p>
+              </div>
 
-                <a href="https://artpylon.github.io/brew-scout_front-end/" class="ghost-button" target="_blank" href="">App</a>
+              <div class="col-md-2 project">
 
-                <a href="https://github.com/artpylon/brew-scout_front-end" class="ghost-button" target="_blank" href="">GitHub</a>
+                  <h3><a target="_blank" href="https://artpylon.github.io/tic-tac-toe-mrg/">Twin Peaks Tic-Tac-Toe</a></h3>
+                  <p>2-player game that includes quotes from the 90s cult classic.</p>
+                  <a href="https://artpylon.github.io/tic-tac-toe-mrg/" target="_blank" class="ghost-button">App</a>
+                  <a href="https://github.com/artpylon/tic-tac-toe-mrg" target="_blank" class="ghost-button">GitHub</a>
 
+              </div>
             </div>
+            <div class="row">
+              <div class="col-md-2 project">
 
-            <div class="project">
+                  <h3><a target="_blank" href="">DripDrop TBD</a></h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  <a target="_blank" class="ghost-button" href="">App</a>
+                  <a target="_blank" class="ghost-button" href="">GitHub</a>
 
-                <h3>
-                <a target="_blank" href="https://artpylon.github.io/tic-tac-toe-mrg/">Twin Peaks Tic-Tac-Toe</a>
-            </h3>
-                <p>2-player game that includes quotes from the 90s cult classic.</p>
+              </div>
 
-                <a href="https://artpylon.github.io/tic-tac-toe-mrg/" target="_blank" class="ghost-button">App</a>
+              <div class="col-md-2 project">
 
-                <a href="https://github.com/artpylon/tic-tac-toe-mrg" target="_blank" class="ghost-button">GitHub</a>
-
-            </div>
-
-            <div class="project">
-
-                <h3>
-                  <a target="_blank" href="">DripDrop TBD</a>
-                </h3>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
-
-                <a target="_blank" class="ghost-button" href="">App</a>
-
-                <a target="_blank" class="ghost-button" href="">GitHub</a>
-
-            </div>
-
-            <div class="project">
-
-                <h3>
-                  <a target="_blank" href="">Project 4 TBD</a>
-                </h3>
-
+                <h3><a target="_blank" href="#">Project 4 TBD</a></h3>
                 <p>Play a classic two-player game of tic-tac-toe with the company of Special Agent Dale Cooper.</p>
+                <a target="_blank" class="ghost-button" href="#">App</a>
+                <a target="_blank" class="ghost-button" href="#">GitHub</a>
 
-                <a target="_blank" class="ghost-button" href="">App</a>
-
-                <a target="_blank" class="ghost-button" href="">GitHub</a>
-
+              </div>
             </div>
+            <div class="col-md-1"></div>
         </section>
 
 
