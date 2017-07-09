@@ -8,11 +8,13 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Place favicon.ico in the root directory -->
+
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
 
-  <!-- <link rel="stylesheet" type="text/css" href="assets/styles/index.scss"> -->
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
 <!-- Do not add `script` tags unless you know what you are doing -->
   <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
@@ -25,28 +27,40 @@
     <div class="container">
 
         <!-- Intro Section -->
-      <div class="intro-box">
-        <section class='intro'>
-          <div class='intro-name'>
-            <h1 id="headline">Matt Gray | Full-Stack Web Developer</h1>
-            <h2 class='typed'></h2>
-          </div>
+      <div class="row">
+        <div class="col-md-12 intro-box">
+          <section class='intro'>
+            <div class='intro-name'>
+              <h1 id="headline">Matt Gray | Full-Stack Web Developer</h1>
+              <h2 class='typed'></h2>
+            </div>
 
-          <div class="intro-links">
-            <a href="https://www.linkedin.com/in/matthewgray88/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/artpylon" target="_blank">GitHub</a>
-            <a href="https://drive.google.com/file/d/0BxtpRPyddhwRM192MlQwZTZtdG8/view?usp=sharing" target="_blank">Resume</a>
-            <a href="mailto:matthewgray88@gmail.com">Email</a>
-          </div>
-        </section>
+            <div class="intro-links">
+              <a href="https://www.linkedin.com/in/matthewgray88/" target="_blank">LinkedIn</a>
+              <a href="https://github.com/artpylon" target="_blank">GitHub</a>
+              <a href="https://drive.google.com/file/d/0BxtpRPyddhwRM192MlQwZTZtdG8/view?usp=sharing" target="_blank">Resume</a>
+              <a href="mailto:matthewgray88@gmail.com">Email</a>
+            </div>
+          </section>
+        </div>
       </div>
 
         <!-- About Section -->
-        <section class="about">
+      <div class="row">
+        <section id="about" class="col-md-12 about">
+            <div class="row">
+              <!-- <div class="col-md-4"></div> -->
+              <div class="section-title profilepic">
+                <img src="http://i.imgur.com/dW2RkPj.jpg">
+              </div>
+              <!-- <div class="col-md-4"></div> -->
+            <!-- </div> -->
 
+            <div class="row">
             <h2 class="section-title">About Me</h2>
 
-            <div class="aboutlong">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 aboutlong">
               <p>I love to plan, build and deliver innovative software.
                 After years of experience as a product manager,
                 leading agile development teams, I have become a full-stack web
@@ -56,8 +70,11 @@
                 that helps them live better lives.
               </p>
             </div>
+            <div class="col-md-1"></div>
+            </div>
 
         </section>
+      </div>
 
   <!-- Carousel Section -->
   <!-- <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"> -->
@@ -107,9 +124,10 @@
 </div> <! Carousel -->
 
         <!-- Projects Section -->
+        <div class="row">
         <section class="col-md-12 projects">
             <h2 class="section-title">Projects</h2>
-            <div class="col-md-1"></div>
+            <!-- <div class="col-md-1"></div> -->
             <div class="row">
               <div class="col-md-2 project">
                   <h3><a href="https://artpylon.github.io/brew-scout_front-end/" target="_blank">Brew Scout</a></h3>
@@ -148,12 +166,14 @@
 
               </div>
             </div>
-            <div class="col-md-1"></div>
+            <!-- <div class="col-md-1"></div> -->
         </section>
+      </div>
 
 
         <!-- Skills Section -->
-        <section class="skills">
+      <div class="row">
+        <section class="col-md-12 skills">
             <h2 class="section-title">Skills</h2>
 
             <h4>HTML</h4>
@@ -173,8 +193,45 @@
             <h4>MongoDB</h4>
             <h4>Express</h4>
         </section>
+      </div>
 
-    </div>
+    <div class="row">
+    <footer class="footer">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                          <ul class="list-inline text-center">
+                              <li>
+                                  <a href="https://twitter.com/dripdropfiles">
+                                      <span class="fa-stack fa-lg">
+                                          <i class="fa fa-circle fa-stack-2x"></i>
+                                          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                      </span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="https://www.facebook.com/dripdropfiles/">
+                                      <span class="fa-stack fa-lg">
+                                          <i class="fa fa-circle fa-stack-2x"></i>
+                                          <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                      </span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="https://github.com/the-best-org-lab">
+                                      <span class="fa-stack fa-lg">
+                                          <i class="fa fa-circle fa-stack-2x"></i>
+                                          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                      </span>
+                                  </a>
+                              </li>
+                          </ul>
+
+                      </div>
+                  </div>
+              </div>
+          </footer>
+        </div>
 
 </body>
 
