@@ -70,7 +70,8 @@ h3, h4 {
   border: 3px solid;
   border-color: $blue;
   position: relative;
-  margin: 10px 30px;
+  margin: 10px 10px 10px 70px;
+
   text-align: center;
 }
 
@@ -79,9 +80,14 @@ h3, h4 {
   width: 50%;
 }
 
-.row {
-  margin-top: 0;
-  padding-top: 0;
+// .row {
+//   margin-top: 0;
+//   padding-top: 0;
+// }
+
+#skill-section {
+  background-color: white;
+  padding-bottom: 40px;
 }
 
 .intro-name {
@@ -239,7 +245,8 @@ section:nth-child(odd) {
 }
 
 .skills {
-  margin-bottom: 0;
+  margin-bottom: 40px;
+  background-color: white;
 }
 
 .skills h4 {
@@ -253,6 +260,7 @@ footer {
   height: 150px;
   width: 100%;
 }
+
 .list-inline {
   margin-top: 20px !important;
   padding-top: 20px !important;
@@ -371,7 +379,7 @@ footer {
 
 #recommendations {
   background: white;
-  height: 250px;
+  height: 350px;
   padding: 0;
   margin-left: 0;
   margin-right: 0;
@@ -433,6 +441,7 @@ footer {
 
 .item blockquote {
     border-left: none;
+    height: 250px;
     margin: 0;
 }
 
@@ -462,6 +471,11 @@ footer {
       margin-right: 0;
       padding: 0 40px 0px 40px;
     }
+    .project-img {
+
+      margin: 10px 10px 10px 40px;
+
+    }
 
 }
 
@@ -486,6 +500,11 @@ footer {
         margin: 0px 5px;
         width: 20px;
         height: 20px;
+    }
+    .project-img {
+
+      margin: 10px 10px 10px 40px;
+
     }
 }
 
