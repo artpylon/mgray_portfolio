@@ -10,12 +10,11 @@ $grey: #838483;
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: linear-gradient(180deg, $blue, $grey 60%);
   background-color: $blue;
   margin: 0;
   padding: 0;
   width: 100% !important;
-  overflow-x: hidden;
+
 }
 
 h1 {
@@ -59,13 +58,27 @@ h3, h4 {
   margin: 0;
   padding: 0;
 }
-img {
+.img {
   border: 3px solid;
   border-color: $blue;
   border-radius: 50%;
   text-align: center;
 
 }
+
+.project-img {
+  border: 3px solid;
+  border-color: $blue;
+  position: relative;
+  margin: 10px 30px;
+  text-align: center;
+}
+
+.project-content {
+  float: left;
+  width: 50%;
+}
+
 .row {
   margin-top: 0;
   padding-top: 0;
@@ -99,6 +112,7 @@ p {
   line-height: 160%;
   margin-top: 0;
   margin-bottom: 25px;
+  display: block;
 }
 
 .intro-links a {
@@ -190,7 +204,8 @@ section:nth-child(odd) {
   // background-position: right;
   // background-repeat: no-repeat;
   // background-size: cover;
-  height: 250px;
+  height: 300px;
+  padding-left: 30px;
   // position: relative;
 }
 
@@ -214,8 +229,13 @@ section:nth-child(odd) {
 
 .project {
   background-color: #fbfdff;
-  padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  // padding: 20px;
+  // margin-bottom: 20px;
+}
+
+.project-content {
+  margin: 20px 40px;
 }
 
 .skills {
@@ -346,6 +366,130 @@ footer {
   }
 }
 
+
+/* carousel */
+
+#recommendations {
+  background: white;
+  height: 250px;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+
+}
+
+#quote-carousel
+{
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 30px;
+  width: 100%;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control
+{
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+/* Previous button  */
+#quote-carousel .carousel-control.left
+{
+  left: -12px;
+}
+/* Next button  */
+#quote-carousel .carousel-control.right
+{
+  right: -12px !important;
+}
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li
+{
+  background: #c0c0c0;
+}
+#quote-carousel .carousel-indicators .active
+{
+  background: #333333;
+}
+#quote-carousel img
+{
+  width: 250px;
+  height: 100px
+}
+/* End carousel */
+
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+
+.item blockquote img {
+    margin-bottom: 10px;
+}
+
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+
+
+/**
+  MEDIA QUERIES
+*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #quote-carousel
+    {
+      margin-bottom: 0;
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0 40px 0px 40px;
+    }
+
+}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) {
+
+    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+    #recommendations {
+      display: none;
+    }
+
+    #quote-carousel .carousel-indicators {
+        bottom: -20px !important;
+    }
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
 @media (max-width: 330px) {
   #headline {
     font-size: 32px !important;
@@ -400,17 +544,17 @@ footer {
   //   min-width: 501px;
   // }
   .project {
-    float: left;
-    display: block;
-    height: 250px;
-    margin-left: 1.35765%;
-    margin-right: 1.35765%;
-    width: 48.82117%;
-    width: 47%;
+    // float: left;
+    // display: block;
+    // height: 250px;
+    // margin-left: 2%;
+    // margin-right: 2%;
+    // // width: 48.82117%;
+    // width: 90%;
   }
-  .project:last-child {
-    margin-right: 0;
-  }
+  // .project:last-child {
+  //   margin-right: 0;
+  // }
 }
 
 @media (min-width: 800px) {
