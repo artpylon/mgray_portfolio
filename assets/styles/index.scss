@@ -3,6 +3,7 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 
 $blue: #302a5f;
 $grey: #838483;
+$lightgrey: #efefef;
 
 * {
   font-size: 16px;
@@ -54,6 +55,12 @@ h3, h4 {
   color: #e94344;
 }
 
+.container-fluid {
+  margin: auto;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
 .profile-pic {
   margin: 0;
   padding: 0;
@@ -225,12 +232,13 @@ section:nth-child(odd) {
   padding: 0;
 }
 
-#about {
-  background-color: #fbfdff !important;
+#about-section {
+  background-color: $lightgrey !important;
 }
 
 .projects {
-  margin: 0
+  margin: 0;
+  background-color: $lightgrey;
 }
 
 .project {
@@ -245,7 +253,7 @@ section:nth-child(odd) {
 }
 
 .skills {
-  margin-bottom: 40px;
+  // margin-bottom: 40px;
   background-color: white;
 }
 
@@ -259,6 +267,10 @@ footer {
   background-color: $blue;
   height: 150px;
   width: 100%;
+}
+
+#footer {
+  background-color: $blue;
 }
 
 .list-inline {
@@ -389,11 +401,12 @@ footer {
 
 #quote-carousel
 {
-  padding: 0;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 30px;
+  margin: 30px;
   width: 100%;
+}
+
+.quote-div {
+  width: 75%;
 }
 
 /* Control buttons  */
@@ -580,9 +593,6 @@ footer {
   #headline {
     font-size: 40px !important;
   }
-  // .section {
-  //   min-width: 90px;
-  // }
   .skills h4 {
     float: left;
     display: block;
