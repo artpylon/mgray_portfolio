@@ -257,6 +257,22 @@ section:nth-child(odd) {
   margin: 20px 40px;
 }
 
+.tech-tag {
+  display: inline-block;
+  padding: 4px 8px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #6a737d;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 12px;
+  // clear: left;
+  // float: left;
+}
+
 .skills {
   // margin-bottom: 40px;
   background-color: white;
