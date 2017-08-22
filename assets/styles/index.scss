@@ -274,6 +274,31 @@ section:nth-child(odd) {
   // float: left;
 }
 
+.top-skills {
+  margin: auto 0 10px 0;
+  width: 100%;
+}
+
+.top-skill-tags {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+
+.top-tech-tag {
+  display: inline-block;
+  padding: 4px 8px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: $blue;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 12px;
+}
+
 .skills {
   // margin-bottom: 40px;
   background-color: white;
